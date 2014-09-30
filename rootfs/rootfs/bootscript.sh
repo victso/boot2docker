@@ -72,3 +72,8 @@ fi
 # Execute automated_script
 # disabled - this script was written assuming bash, which we no longer have.
 #/etc/rc.d/automated_script.sh
+
+# Cyrill: mount folders for web development. automount is at the moment not working. no idea why. Only Users=/Users is working :-(
+mkdir -p /var/www/data /var/www/site
+mount -t vboxsf -o uid=1000,gid=50 site /var/www/site
+mount -t vboxsf -o uid=1000,gid=50 data /var/www/data
