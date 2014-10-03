@@ -75,5 +75,5 @@ fi
 
 # Cyrill: mount folders for web development. automount is at the moment not working. no idea why. Only Users=/Users is working :-(
 mkdir -p /var/www/data /var/www/site
-mount -t vboxsf -o uid=1000,gid=50 site /var/www/site
-mount -t vboxsf -o uid=1000,gid=50 data /var/www/data
+mount -t vboxsf -o uid=0,gid=0 site /var/www/site
+mount -t vboxsf -o uid=33,gid=33 data /var/www/data
