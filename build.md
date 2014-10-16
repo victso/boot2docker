@@ -4,6 +4,7 @@ You can clone this repositiory. Cd in to it and build the image:
 
 	$ docker build -t user/boot2docker .
 
+	
 It takes a little while. Once finished you need to to extract it's iso. This is how I've done it:
 
 	$ docker run -i -t --rm user/boot2docker /bin/bash
